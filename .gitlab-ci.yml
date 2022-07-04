@@ -1,0 +1,19 @@
+image: cypress/base:12
+stages:
+  - build
+  - test
+
+install:
+  stage: build
+  script:
+    - npm install --legacy-peer-deps"
+
+cypress-e2e:
+  stage: test
+  script:
+    - npm run cy:dashboard"
+  artifacts:
+    when: always
+    paths:
+      - cypress/videos
+      - cypress/reports
