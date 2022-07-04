@@ -1,2 +1,2 @@
 # cypress-framework
-Cypress Automation Framework
+Cypress Automation Framework with Gitlab CI Pipeline
